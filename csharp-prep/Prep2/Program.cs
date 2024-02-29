@@ -34,6 +34,13 @@ class Program
             Console.WriteLine($"Your grade {percentage} corresponds to an F.");
         }
         
-
+        if (percentage >= 70)
+        {
+            Console.WriteLine($"Congratulations you have passed the class!");
+        }
+        else
+        {
+            Console.WriteLine($"You haven't passed the class, Don't give up and keep trying you got it.");
+        }
     }
 }

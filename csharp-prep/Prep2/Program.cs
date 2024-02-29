@@ -2,45 +2,48 @@ using System;
 
 class Program
 {
-    static void Main(string [] args)
+    static void Main(string[] args)
     {
         
         Console.Write("What is your grade percentage?: ");
         string userInput = Console.ReadLine();
         int percentage = int.Parse(userInput);
+        
+        string letter = " ";
 
         if (percentage >= 90)
         {
-            Console.WriteLine($"Your grade {percentage} corresponds to an A.");
+            letter = "A";
         }
         
         else if (percentage >= 80)
         {
-            Console.WriteLine($"Your grade {percentage} corresponds to an B.");
+            letter = "B";
         }
         
         else if (percentage >= 70)
         {
-            Console.WriteLine($"Your grade {percentage} corresponds to an C.");
+            letter = "C";
         }
         
         else if (percentage >= 60)
         {
-            Console.WriteLine($"Your grade {percentage} corresponds to an D.");
+            letter = "D";
         }
 
         else
         {
-            Console.WriteLine($"Your grade {percentage} corresponds to an F.");
+            letter = "F";
         }
-        
+        Console.WriteLine($"Your percentage {percentage} corresponds to {letter}.");
+
         if (percentage >= 70)
         {
-            Console.WriteLine($"Congratulations you have passed the class!");
+            Console.WriteLine("Congratulations you have passed the class!");
         }
         else
         {
-            Console.WriteLine($"You haven't passed the class, Don't give up and keep trying you got it.");
+            Console.WriteLine("You haven't passed the class, Don't give up and keep trying, you got it.");
         }
     }
 }

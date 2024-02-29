@@ -4,9 +4,8 @@ class Program
 {
     static void Main(string[] args)
     {
-        Console.Write("What is the magic number?: ");
-        string magic = Console.ReadLine();
-        int  number = int.Parse(magic);
+        Random randomGenerator = new Random();
+        int number =randomGenerator.Next(1, 100);
 
         Console.Write("What is your guess?:");
         string response = Console.ReadLine();
@@ -21,7 +20,7 @@ class Program
             }
             else if (guess > number )
             {
-                Console.WriteLine("Higher.");
+                Console.WriteLine("Higher");
             }
             else
             {

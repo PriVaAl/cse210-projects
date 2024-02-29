@@ -9,7 +9,7 @@ class Program
 
         Console.Write("What's your last name: ");
         string last_name = Console.ReadLine();
-        
-        Console.WriteLine($"Your name is {last_name}, {last_name} {name}");
+
+        Console.WriteLine($"Your name is {last_name}, {last_name} {name}.");
     }
 }

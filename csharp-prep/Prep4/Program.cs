@@ -21,7 +21,17 @@ class Program
             }
         }    
 
-           
+        int total_sum = 0
+        for (int number in numbers)
+        {
+            total_sum += number; 
+        }
+        Console.WriteLine($"The sum of numbers is:{total_sum}.");
+
+        float average = ((float)total_sum)/ numbers.Count;
+        Console.WriteLine($"The average of the numbers is: {average}.");
+
+            
         
     }
 }

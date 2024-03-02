@@ -9,23 +9,20 @@ class Program
         List <int> numbers = new List<int>();
         int number = -1;
 
-        while (number!= 0)
+        while (number != 0)
         {
             Console.Write( "Enter a number: ");
             string answer = Console.ReadLine();
             number = int.Parse(answer);
+            numbers.Add(number);
             
-            if (number!=0)
-            {
-                numbers.Add(number);
-            }
         }    
 
         int total_sum = 0;
 
         foreach (int n in numbers)
         {
-            total_sum += number; 
+            total_sum += n; 
         }
         Console.WriteLine($"The sum of numbers is:{total_sum}.");
 
@@ -35,9 +32,9 @@ class Program
         int largest = numbers[0];
         foreach (int n in numbers)
         {
-            if (number > largest)
+            if (n > largest)
             {
-                largest = number;
+                largest = n;
             }
         }
         

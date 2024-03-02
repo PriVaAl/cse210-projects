@@ -31,7 +31,17 @@ class Program
         float average = ((float)total_sum)/ numbers.Count;
         Console.WriteLine($"The average of the numbers is: {average}.");
 
-            
+        int largest = numbers[0]
+        for (int number in numbers)
+        {
+            if (number > largest)
+            {
+                largest = number;
+            }
+        }
         
+        Console.WriteLine($"The largest number is: {largest}.")
+                
+    
     }
 }

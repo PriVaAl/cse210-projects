@@ -1,5 +1,5 @@
 using System;
-using Sytem.Collections.Generic;
+using System.Collections.Generic;
 
 class Program
 {
@@ -7,7 +7,7 @@ class Program
     {
         Console.WriteLine("Enter a list of numbers, type 0 when finished.");
         List <int> numbers = new List<int>();
-        int number = -1
+        int number = -1;
 
         while (number!= 0)
         {
@@ -21,8 +21,9 @@ class Program
             }
         }    
 
-        int total_sum = 0
-        for (int number in numbers)
+        int total_sum = 0;
+
+        foreach (int n in numbers)
         {
             total_sum += number; 
         }
@@ -31,8 +32,8 @@ class Program
         float average = ((float)total_sum)/ numbers.Count;
         Console.WriteLine($"The average of the numbers is: {average}.");
 
-        int largest = numbers[0]
-        for (int number in numbers)
+        int largest = numbers[0];
+        foreach (int n in numbers)
         {
             if (number > largest)
             {
@@ -40,7 +41,7 @@ class Program
             }
         }
         
-        Console.WriteLine($"The largest number is: {largest}.")
+        Console.WriteLine($"The largest number is: {largest}.");
                 
     
     }

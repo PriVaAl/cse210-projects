@@ -2,8 +2,9 @@ using System;
 
 class Program
 {
-    static void Main(string[] args)
+    static void DisplayWelcome()
     {
-        Console.WriteLine("Hello Prep5 World!");
+        Console.WriteLine("Welcome to the Program!");
     }
+    
 }

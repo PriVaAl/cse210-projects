@@ -8,12 +8,11 @@ class Program
         //int number = int.Parse(Console.ReadLine());
 
         Random randomGenerator = new Random();
-        int number =randomGenerator.Next(1, 101);
-
+        int number =randomGenerator.Next(1, 100);
         
         int guess = -1;
 
-        while (guess!= number)
+        while (guess != number)
         {
             Console.Write("What is your guess?: ");
             guess = int.Parse(Console.ReadLine());
@@ -24,11 +23,11 @@ class Program
             }
             else if (guess > number )
             {
-                Console.WriteLine("Higher");
+                Console.WriteLine("Lower");
             }
             else
             {
-                Console.WriteLine("Lower");
+                Console.WriteLine("Higher");
             }
         }
 

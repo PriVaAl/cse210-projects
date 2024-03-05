@@ -20,5 +20,11 @@ class Program
        job1.DisplayDetails();
        job2.DisplayDetails();
 
+       Resume myResume._jobs.Add(job1);
+       Resume myResume._jobs.Add(job2);
+
+       myResume.Display()
+
+
     }
 }

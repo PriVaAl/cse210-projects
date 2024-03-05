@@ -17,13 +17,13 @@ class Program
        job2._enterYear = 2002;
        job2._endYear = 2024;
        
-       job1.DisplayDetails();
-       job2.DisplayDetails();
+       Resume myResume = new Resume();
+       myResume._personName = "Priscilla Valverde";
+       
+       myResume._jobs.Add(job1);
+       myResume._jobs.Add(job2);
 
-       Resume myResume._jobs.Add(job1);
-       Resume myResume._jobs.Add(job2);
-
-       myResume.Display()
+       myResume.Display();
 
 
     }

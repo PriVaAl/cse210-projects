@@ -1,22 +1,13 @@
-using System
+using System;
 public class Job
 {
-    private string _company;
-    private string _jobTitle;
-    private int _enterYear;
-    private int _endYear;
-    
-    public Job( string company, string jobTitle, int enterYear, int endYear) 
+    public string _jobTitle;
+    public string _company;
+    public int _enterYear;
+    public int _endYear;
 
+    public void Display()   
     {
-        _company = company;
-        _jobTitle = jobTitle;
-        _enterYear = enterYear;
-        _endYear = endYear;
-    }
-
-    public void DisplayJobInformation()
-    {
-        Console.WriteLine($"{_company}, {_jobTitle}, {_enterYear} {_endYear}")
+        Console.WriteLine($" {_jobTitle}, {_company}, {_enterYear} {_endYear}");
     }
 }

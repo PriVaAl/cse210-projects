@@ -1,7 +1,8 @@
 using System;
 using System.Collections.Generic;
 using System.IO;
-
+//Added Exceeding Requirements
+// A new option on the menu to delete the last entry, and a final message for using the journal.
 public class Program
 {
     static void Main(string[] args)

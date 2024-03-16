@@ -1,7 +1,7 @@
 using System;
 using System.Collections.Generic;
 
-//For exceeding requirements created a menu for the user to choose what scripture to memorize.
+//To exceed requirements I created a menu for the user to choose what scripture to memorize.
 class Program
 {
     static void Main(string[] args)

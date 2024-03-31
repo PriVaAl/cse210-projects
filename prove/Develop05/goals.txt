@@ -1,0 +1,4 @@
+0
+SimpleGoal:Simple,Simple description,50,False
+EternalGoal:Eternal,Eternal description,25
+CheckListGoal:Check,Check description,10,100,3,0

@@ -4,6 +4,8 @@ class Program
 {
     static void Main(string[] args)
     {
-        Console.WriteLine("Hello FinalProject World!");
-    }
+        
+        FitnessTrackerManager fitnessTrackerManager = new FitnessTrackerManager();
+        fitnessTrackerManager.StartTracker();
+    }    
 }

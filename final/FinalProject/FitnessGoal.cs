@@ -8,7 +8,6 @@ public class FitnessGoal
     protected string _name;
     protected string _description;
     protected int _target;
-
     protected DateTime _date;
 
     public FitnessGoal(string name, string description, int target, DateTime date)
@@ -17,27 +16,30 @@ public class FitnessGoal
         _description = description;
         _target = target;
         _date = date;
-
-
-
     }
 
-    public string AddGoal()
-    {
-        Console.Write("What is your goal's name?: ");
-        string name = Console.ReadLine();
-        Console.Write("What is your goal about?: ");
-        string  description = Console.ReadLine();
-        Console.Write("What is your burn calorie targe?: ");
-        int target = int.Parse(Console.ReadLine());
-        Console.Write("What is the date you want to acomplish your goal?: ");
-        int date = int.Parse(Console.ReadLine());
-        return $"Name:{name}, description {description}, your burn calories target{target} and the date you want to accomplish {date}";
-    }
 
     public string DisplayGoal()
     {
-        return $"The name:{_name}, description: {_description}, target {_target} and date{_date}";
+        return $"Name:{_name}, \nDescription: {_description}, \nTarget {_target} \n Date{_date}";
     }
 
+    public string GetStringRepresentation()
+    {
+        return $"{_name},{_description},{_target},{_date}";
+    }
+
+    public static FitnessGoal FromString(string line)
+    {
+        string[] parts = line.Split(',');
+        if (parts.Length >= 4)
+        {
+            string name = parts[0];
+            string description = parts[1];
+            int target = int.Parse(parts[2]);
+            DateTime date = DateTime.Parse(parts[3]);
+            return new FitnessGoal(name, description, target, date);
+        }
+        return null; 
+    }
 }

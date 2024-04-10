@@ -3,8 +3,6 @@ using System;
 public class Workout
 {
     protected List <Exercise> _exercises;
-    protected string _newExercise;
-   
     
     public Workout()
     {
@@ -14,9 +12,9 @@ public class Workout
     }
     
 
-    public void AddExcercise(Exercise newExercise)
+    public void AddExcercise(Exercise exercise)
     {
-        _exercises.Add(newExercise);
+        _exercises.Add(exercise);
     }
 
     public int CalculateCaloriesBurned(int duration)
@@ -36,6 +34,10 @@ public class Workout
     
     }
 
+    public void AddExercise(Exercise exercise)
+    {
+        _exercises.Add(exercise);
+    }
     public string WorkoutDetails()
     {
         string details = "Workout Details:\n ";
@@ -46,8 +48,4 @@ public class Workout
         return details;
 
     }
-
-
-
-
 }

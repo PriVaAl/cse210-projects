@@ -11,13 +11,13 @@ public class StretchingExercise : Exercise
 
     public override int  CaloriesBurnedPerMinute()
     {
-        return base.CaloriesBurnedPerMinute() * _repetitions;
+        return _calories * _duration * _repetitions;
 
     }
 
     public override string GetDetailString()
     {
-        return $"Name:{_name} Calories Burned: {CaloriesBurnedPerMinute()} and worked with many repetitions: {_repetitions} "; 
+        return $"Name:{_name}, Calories Burned: {CaloriesBurnedPerMinute()} calories per minute and worked with {_repetitions} repetitions."; 
     
     }
 

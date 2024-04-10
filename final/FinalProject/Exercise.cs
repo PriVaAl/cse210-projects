@@ -15,10 +15,8 @@ public abstract class Exercise
 
     }
 
-    public virtual int  CaloriesBurnedPerMinute()
-    {
-        return _calories * _duration;
-    }
+    public abstract int  CaloriesBurnedPerMinute();
+    
     public virtual string GetDetailString()
     {
         return $"Name:{_name}, Calories burned per minute: {CaloriesBurnedPerMinute()}";

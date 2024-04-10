@@ -10,13 +10,13 @@ public class StrengthExercise : Exercise
 
     public override int CaloriesBurnedPerMinute()
     {
-        return base.CaloriesBurnedPerMinute() * _weight;
+        return _calories * _duration * _weight;
 
     }
 
     public override string GetDetailString()
     {
-        return $"Name: {_name} Calories Burned: {CaloriesBurnedPerMinute()} and weight from dumbbells worked with: {_weight} "; 
+        return $"Name: {_name}, Calories Burned:{CaloriesBurnedPerMinute()} calories per minute and weight from dumbbells worked with:{_weight} pounds."; 
     }
 
 
